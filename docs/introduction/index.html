@@ -1,0 +1,4246 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Product Introduction &mdash; LEC-PX30 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting Started" href="../getting-started/index.html" />
+    <link rel="prev" title="LEC-PX30 SMARC Module with Rockchip PX-30" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LEC-PX30
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Product Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-smarc-formfactor">The SMARC Formfactor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#specifications">Specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#core-system">Core System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#video">Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#audio">Audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dual-ethernet">Dual Ethernet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extension-busses">Extension busses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#system-storage">System Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sema-board-management-controller">SEMA® Board Management Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#debug-header">Debug Header</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#power">Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mechanical-and-environmental">Mechanical and Environmental</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#block-diagram">Block Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#pinout-and-signal-descriptions">Pinout and Signal Descriptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#signal-terminology-descriptions">Signal Terminology Descriptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-first-display-interface">The First Display Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lvds0-mode">LVDS0 mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dsi-mode">DSI mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#second-third-display-interface">Second / Third Display Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mipi-csi1-camera">MIPI CSI1 (Camera)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i2s-audio">I2S (audio)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb-ports">USB ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcie-ports">PCIe Ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sata-ports">SATA Ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dual-lan-ports">Dual LAN ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sdio-sdcard">SDIO (SDCard)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spi-busses">SPI busses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpio">GPIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-bus">CAN bus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power-and-system-management">Power and System Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boot-select">Boot Select</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power-1">Power</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#software-support">Software Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#mechanical">Mechanical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#thermal-solutions">Thermal Solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guides/index.html">Linux Developer Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LEC-PX30</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Product Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="product-introduction">
+<span id="intro"></span><h1>Product Introduction<a class="headerlink" href="#product-introduction" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/image7.png"><img alt="../_images/image7.png" class="align-left" src="../_images/image7.png" style="width: 30.0px; height: 30.0px;" /></a>
+<p><strong>Warning</strong>: this is an EA (early available) engineering manual, meaning contents might properly reflect the actual or final version of this product</p>
+<div class="section" id="the-smarc-formfactor">
+<span id="section-1"></span><h2>The SMARC Formfactor<a class="headerlink" href="#the-smarc-formfactor" title="Permalink to this headline">¶</a></h2>
+<p>The SMARC (“Smart Mobility ARChitecture”) is a versatile small form
+factor computer on Module definition targeting applications that require
+low power, low costs, and high performance. The Modules will typically
+use ARM SOCs similar or the same as those used in many familiar devices
+such as tablet computers and smart phones. Alternative low power SOCs
+and CPUs, such as tablet oriented X86 devices and other RISC CPUs may be
+used as well. The Module power envelope is typically under 6W.</p>
+<p>Two Module sizes are defined: 82 mm x 50 mm and 82 mm x 80 mm.</p>
+<p>The Module PCBs have 314 edge fingers that mate with a low profile 314
+pin 0.5 mm pitch right angle connector (the connector is sometimes
+identified as a 321 pin connector, but 7 pins are lost to the key).</p>
+<p>The Modules are used as building blocks for portable and stationary
+embedded systems. The core CPU and support circuits, including DRAM,
+boot flash, power sequencing, CPU power supplies, GBE and a single
+channel LVDS display transmitter are concentrated on the Module. The
+Modules are used with application specific Carrier Boards that implement
+other features such as audio CODECs, touch controllers, wireless
+devices, etc. The modular approach allows scalability, fast time to
+market and upgradability while still maintaining low costs, low power
+and small physical size.</p>
+<img alt="../_images/sget-logo.png" src="../_images/sget-logo.png" />
+<p>SMARC module and carrier specifications are available online at :
+<a class="reference external" href="https://www.sget.org/standards/smarc.html">https://www.sget.org/standards/smarc.html</a></p>
+</div>
+</div>
+<div class="section" id="specifications">
+<h1>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="core-system">
+<h2>Core System<a class="headerlink" href="#core-system" title="Permalink to this headline">¶</a></h2>
+<p><strong>SoC</strong></p>
+<p>Rockchip PX30 with Quad-core ARM Cortex-A35 CPU TrustZone technology
+support ARMv8 Cryptography Extensions”</p>
+<p><strong>Memory</strong></p>
+<p>1GB or 2GB DDR3L at 1066/1333 MHz, memory down (non ECC)</p>
+<p><strong>L2 Cache</strong></p>
+<p>256KB unified system L2 cache</p>
+<p><strong>IoT security</strong></p>
+<p>CryptoAuthentication™ Device, Microchip ATECC608A</p>
+<p>Cryptographic co-processor with secure hardware-based key storage for
+sign-verify authentication provides Internet of Things (IoT) Protected</p>
+<p>Storage for up to 16 keys, certificates or data ECDH: FIPS SP800-56A
+Elliptic Curve Diffie-Hellman NIST standard P256</p>
+<p>elliptic curve support SHA-256 &amp; HMAC hash including off-chip context
+save/restore AES-128: encrypt/decrypt, galois field multiply for GCM”</p>
+</div>
+<div class="section" id="video">
+<h2>Video<a class="headerlink" href="#video" title="Permalink to this headline">¶</a></h2>
+<p>LEC-PX30 standard display support is limited to either 4-lane MIPI DSI
+or single channel 24-bit LVDS. DSI and LVDS are multiplexed and either
+of them can simply be enabled at boot time. HDMI panel support up to
+1920x1080 resolution can be achieved by using a simple bridge on the
+carrier. A reference design based on ADV7335 “MIPI/DSI Receiver with
+HDMI Transmitter” is available</p>
+<p><strong>GPU Core:</strong></p>
+<p>Mali-G31</p>
+<p><strong>GPU Feature Support</strong></p>
+<p>Supports DirectX 11 FL9_3, OpenGLES 1.1/ 2.0 / 3.2, Vulkan 1.0, OpenCL
+2.0</p>
+<p>Full Profile Video decoding: H.264 up to <a class="reference external" href="mailto:1080p&#37;&#52;&#48;60fps">1080p<span>&#64;</span>60fps</a>, H.265/HEVC up to
+<a class="reference external" href="mailto:1080p&#37;&#52;&#48;60fps">1080p<span>&#64;</span>60fps</a></p>
+<p>MPEG-4, ISO/IEC 14496-2, <a class="reference external" href="mailto:SP&#37;&#52;&#48;L0-3">SP<span>&#64;</span>L0-3</a>, <a class="reference external" href="mailto:ASP&#37;&#52;&#48;L0-5">ASP<span>&#64;</span>L0-5</a>, up to <a class="reference external" href="mailto:1080p&#37;&#52;&#48;60fps">1080p<span>&#64;</span>60fps</a> VP8, up to
+<a class="reference external" href="mailto:1080p&#37;&#52;&#48;60fps">1080p<span>&#64;</span>60fps</a></p>
+<p>Video Encoding: H.264 video encoder at <a class="reference external" href="mailto:BP/MP/HP&#37;&#52;&#48;level">BP/MP/HP<span>&#64;</span>level</a> 4.2
+<a class="reference external" href="mailto:1920x1080&#37;&#52;&#48;30fps">1920x1080<span>&#64;</span>30fps</a>, 1x <a class="reference external" href="mailto:1080p&#37;&#52;&#48;30fps">1080p<span>&#64;</span>30fps</a> or 2x <a class="reference external" href="mailto:720p&#37;&#52;&#48;30fps">720p<span>&#64;</span>30fps</a> encoding</p>
+<p><strong>MIPI DSI</strong></p>
+<p>MIPI DSI 4 lanes at max. <a class="reference external" href="mailto:1080p&#37;&#52;&#48;60fps">1080p<span>&#64;</span>60fps</a> display output (default,
+multiplexed with LVDS signal)</p>
+<p><strong>LVDS</strong></p>
+<p>LVDS single channel 24-bit at max. <a class="reference external" href="mailto:1280x800&#37;&#52;&#48;60fps">1280x800<span>&#64;</span>60fps</a> (multiplexed with MIPI
+DSI signal)</p>
+<p><strong>Camera</strong></p>
+<p>MIPI CSI RX Interface</p>
+<ul class="simple">
+<li><p>Compatible with the MIPI Alliance Interface specification v1.0</p></li>
+<li><p>Up to 4 data lanes, 1.0Gbps maximum data rate per lane, supporting MIPI-HS, MIPI-LP mode</p></li>
+</ul>
+</div>
+<div class="section" id="audio">
+<h2>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h2>
+<p>Supports ES8316 codec for high performance and low power multi-bit
+deltasigma</p>
+<p>audio ADC and DAC (located on carrier)</p>
+</div>
+<div class="section" id="dual-ethernet">
+<h2>Dual Ethernet<a class="headerlink" href="#dual-ethernet" title="Permalink to this headline">¶</a></h2>
+<p><strong>Primary LAN</strong></p>
+<p>MAC 10/100 Ethernet Controller on SoC</p>
+<p>Supports 10/100-Mbps data transfer rates, both full-duplex and
+half-duplex</p>
+<p><strong>Secondary LAN</strong></p>
+<p>MAC/PHY 10/100 Ethernet Controller on LAN9514 via USB 2.0</p>
+<p>Supports 10/100-Mbps data transfer rates, both full-duplex and
+half-duplex</p>
+</div>
+<div class="section" id="extension-busses">
+<h2>Extension busses<a class="headerlink" href="#extension-busses" title="Permalink to this headline">¶</a></h2>
+<p><strong>USB</strong></p>
+<p>4x USB 2.0, 1x USB OTG</p>
+<p><strong>UART</strong></p>
+<p>Two UART interfaces SER0 and SER2 (TX/X/CTS/RTS), 64-byte FIFO and support for 5-bit, 6-bit, 7-bit, 8-bit data transmit or receive</p>
+<p><strong>CAN bus</strong></p>
+<p>Supports CAN2.0B only or mixed CAN2.0B and CAN FD mode, data bit rate up
+to 8 Mbps</p>
+<p><strong>SPI</strong></p>
+<p>2x SPI (one occupied by SPI-to-CAN controller )</p>
+<p><strong>I2S</strong></p>
+<p>2x I2S interfaces with audio resolution from 16-bits to 32-bits and
+sample rate up to 192KHz (see Audio Codec support)</p>
+<p><strong>I2C</strong></p>
+<p>Four I2C interfaces</p>
+<ul class="simple">
+<li><p>Support for 7-bit and 10-bit address mode</p></li>
+<li><p>Software programmable clock frequency of 100 kbit/s in Standard-mode,</p></li>
+</ul>
+<p>400 kbit/s in the Fast-mode or 1 Mbit/s in Fast-mode Plus</p>
+<p><strong>GPIO</strong></p>
+<p>12x GPIO with interrupt, one GPIO with PWM</p>
+</div>
+<div class="section" id="system-storage">
+<h2>System Storage<a class="headerlink" href="#system-storage" title="Permalink to this headline">¶</a></h2>
+<p><strong>SDIO</strong></p>
+<p>1x SDIO (4-bit) compatible with SD3.0, MMC ver. 4.51</p>
+<p><strong>eMMC</strong></p>
+<p>8, 16, 32 or 64 GB (build option)</p>
+<p>Compatible with eMMC specification 4.41, 4.51, 5.0 and 5.1</p>
+</div>
+<div class="section" id="sema-board-management-controller">
+<h2>SEMA® Board Management Controller<a class="headerlink" href="#sema-board-management-controller" title="Permalink to this headline">¶</a></h2>
+<p>Voltage/current monitoring, boot configuration, logistics and forensic</p>
+<p>information, flat panel control, watchdog timer</p>
+</div>
+<div class="section" id="debug-header">
+<h2>Debug Header<a class="headerlink" href="#debug-header" title="Permalink to this headline">¶</a></h2>
+<p>30-pin multipurpose flat cable connector for use with optional DB-30
+debug module Provides JTAG, BMC access; UART, power test points;
+diagnostic LEDs, Power, Reset, Boot configuration</p>
+</div>
+<div class="section" id="power">
+<h2>Power<a class="headerlink" href="#power" title="Permalink to this headline">¶</a></h2>
+<p><strong>Supply Voltage</strong></p>
+<p>4.75 V – 5.25 V</p>
+<p><strong>Rise Time</strong></p>
+</div>
+<div class="section" id="mechanical-and-environmental">
+<h2>Mechanical and Environmental<a class="headerlink" href="#mechanical-and-environmental" title="Permalink to this headline">¶</a></h2>
+<p><strong>Form Factor</strong></p>
+<p>SGET SMARC Specifications v2.1 (2.1 is currently under approval by SGET)</p>
+<p><strong>Dimension</strong></p>
+<p>SMARC short size module, 82mm x 50mm</p>
+<p><strong>Operating Temperature</strong></p>
+<p>Standard: 0°C to +60°C</p>
+<p>Rugged: -20°C to +85°C (optional)</p>
+<p><strong>Humidity</strong></p>
+<p>5-90% RH operating, non-condensing</p>
+<p>5-95% RH storage (and operating with conformal coating)</p>
+<p><strong>Shock and Vibration</strong></p>
+<p>IEC 60068-2-64 and IEC-60068-2-27, MIL-STD-202 F, Method 213B, Table
+213-I,</p>
+<p>Condition A and Method 214A, Table 214-I, Condition D</p>
+</div>
+</div>
+<div class="section" id="block-diagram">
+<h1>Block Diagram<a class="headerlink" href="#block-diagram" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/block-diagram.png" src="../_images/block-diagram.png" />
+</div>
+<div class="section" id="pinout-and-signal-descriptions">
+<h1>Pinout and Signal Descriptions<a class="headerlink" href="#pinout-and-signal-descriptions" title="Permalink to this headline">¶</a></h1>
+<p>The below table is a comprehensible list of all signal pins on the MXM 3
+connector in the standard specification SMARC 2.1. Those signals not
+supported on LEC-PX30 are strikethrough</p>
+<p>Figure 1 – Module top/botom side pin numbering</p>
+<a class="reference internal image-reference" href="../_images/smarc-top.png"><img alt="../_images/smarc-top.png" class="align-left" src="../_images/smarc-top.png" style="width: 350px; height: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/smarc-bottom.png"><img alt="../_images/smarc-bottom.png" class="align-right" src="../_images/smarc-bottom.png" style="width: 350px; height: 250px;" /></a>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 39%" />
+<col style="width: 1%" />
+<col style="width: 5%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>P-Pin</p></th>
+<th class="head"><p>Primary (Top) Side</p></th>
+<th class="head"></th>
+<th class="head"><p>S-Pin</p></th>
+<th class="head"><p>Secondary (Bottom) Side</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td><p>S1</p></td>
+<td><p>[STRIKEOUT:CSI1_TX+ /] I2C_CAM1_CK</p></td>
+</tr>
+<tr class="row-odd"><td><p>P1</p></td>
+<td><p>[STRIKEOUT:SMB_ALERT_1V8#]</p></td>
+<td></td>
+<td><p>S2</p></td>
+<td><p>[STRIKEOUT:CSI1_TX- /] I2C_CAM1_DAT</p></td>
+</tr>
+<tr class="row-even"><td><p>P2</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S3</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P3</p></td>
+<td><p>CSI1_CK+</p></td>
+<td></td>
+<td><p>S4</p></td>
+<td><p>RSVD</p></td>
+</tr>
+<tr class="row-even"><td><p>P4</p></td>
+<td><p>CSI1_CK-</p></td>
+<td></td>
+<td><p>S5</p></td>
+<td><p>[STRIKEOUT:CSI0_TX- / I2C_CAM0_CK]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P5</p></td>
+<td><p>[STRIKEOUT:GBE1_SDP]</p></td>
+<td></td>
+<td><p>S6</p></td>
+<td><p>CAM_MCK</p></td>
+</tr>
+<tr class="row-even"><td><p>P6</p></td>
+<td><p>[STRIKEOUT:GBE0_SDP]</p></td>
+<td></td>
+<td><p>S7</p></td>
+<td><p>[STRIKEOUT:CSI0_TX+ / I2C_CAM0_DAT]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P7</p></td>
+<td><p>CSI1_RX0+</p></td>
+<td></td>
+<td><p>S8</p></td>
+<td><p>[STRIKEOUT:CSI0_CK+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P8</p></td>
+<td><p>CSI1_RX0-</p></td>
+<td></td>
+<td><p>S9</p></td>
+<td><p>[STRIKEOUT:CSI0_CK-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P9</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S10</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P10</p></td>
+<td><p>CSI1_RX1+</p></td>
+<td></td>
+<td><p>S11</p></td>
+<td><p>[STRIKEOUT:CSI0_RX0+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P11</p></td>
+<td><p>CSI1_RX1-</p></td>
+<td></td>
+<td><p>S12</p></td>
+<td><p>[STRIKEOUT:CSI0_RX0-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P12</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S13</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P13</p></td>
+<td><p>CSI1_RX2+</p></td>
+<td></td>
+<td><p>S14</p></td>
+<td><p>[STRIKEOUT:CSI0_RX1+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P14</p></td>
+<td><p>CSI1_RX2-</p></td>
+<td></td>
+<td><p>S15</p></td>
+<td><p>[STRIKEOUT:CSI0_RX1-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P15</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S16</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P16</p></td>
+<td><p>CSI1_RX3+</p></td>
+<td></td>
+<td><p>S17</p></td>
+<td><p>GBE1_MDI0+</p></td>
+</tr>
+<tr class="row-odd"><td><p>P17</p></td>
+<td><p>CSI1_RX3-</p></td>
+<td></td>
+<td><p>S18</p></td>
+<td><p>GBE1_MDI0-</p></td>
+</tr>
+<tr class="row-even"><td><p>P18</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S19</p></td>
+<td><p>GBE1_LINK100#</p></td>
+</tr>
+<tr class="row-odd"><td><p>P19</p></td>
+<td><p>[STRIKEOUT:GBE0_MDI3-]</p></td>
+<td></td>
+<td><p>S20</p></td>
+<td><p>GBE1_MDI1+</p></td>
+</tr>
+<tr class="row-even"><td><p>P20</p></td>
+<td><p>[STRIKEOUT:GBE0_MDI3+]</p></td>
+<td></td>
+<td><p>S21</p></td>
+<td><p>GBE1_MDI1-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P21</p></td>
+<td><p>GBE0_LINK100#</p></td>
+<td></td>
+<td><p>S22</p></td>
+<td><p>[STRIKEOUT:GBE1_LINK1000#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P22</p></td>
+<td><p>[STRIKEOUT:GBE0_LINK1000#]</p></td>
+<td></td>
+<td><p>S23</p></td>
+<td><p>[STRIKEOUT:GBE1_MDI2+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P23</p></td>
+<td><p>[STRIKEOUT:GBE0_MDI2-]</p></td>
+<td></td>
+<td><p>S24</p></td>
+<td><p>[STRIKEOUT:GBE1_MDI2-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P24</p></td>
+<td><p>[STRIKEOUT:GBE0_MDI2+]</p></td>
+<td></td>
+<td><p>S25</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P25</p></td>
+<td><p>GBE0_LINK_ACT#</p></td>
+<td></td>
+<td><p>S26</p></td>
+<td><p>[STRIKEOUT:GBE1_MDI3+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P26</p></td>
+<td><p>GBE0_MDI1-</p></td>
+<td></td>
+<td><p>S27</p></td>
+<td><p>[STRIKEOUT:GBE1_MDI3-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P27</p></td>
+<td><p>GBE0_MDI1+</p></td>
+<td></td>
+<td><p>S28</p></td>
+<td><p>GBE1_CTREF</p></td>
+</tr>
+<tr class="row-even"><td><p>P28</p></td>
+<td><p>GBE0_CTREF</p></td>
+<td></td>
+<td><p>S29</p></td>
+<td><p>[STRIKEOUT:PCIE_D_TX+ / SERDES_1_TX+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P29</p></td>
+<td><p>GBE0_MDI0-</p></td>
+<td></td>
+<td><p>S30</p></td>
+<td><p>[STRIKEOUT:PCIE_D_TX- / SERDES_1_TX-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P30</p></td>
+<td><p>GBE0_MDI0+</p></td>
+<td></td>
+<td><p>S31</p></td>
+<td><p>GBE1_LINK_ACT#</p></td>
+</tr>
+<tr class="row-odd"><td><p>P31</p></td>
+<td><p>[STRIKEOUT:SPI0_CS1#]</p></td>
+<td></td>
+<td><p>S32</p></td>
+<td><p>[STRIKEOUT:PCIE_D_RX+ / SERDES_1_RX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P32</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S33</p></td>
+<td><p>[STRIKEOUT:PCIE_D_RX- / SERDES_1_RX-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P33</p></td>
+<td><p>SDIO_WP</p></td>
+<td></td>
+<td><p>S34</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P34</p></td>
+<td><p>SDIO_CMD</p></td>
+<td></td>
+<td><p>S35</p></td>
+<td><p>USB4+</p></td>
+</tr>
+<tr class="row-odd"><td><p>P35</p></td>
+<td><p>SDIO_CD#</p></td>
+<td></td>
+<td><p>S36</p></td>
+<td><p>USB4-</p></td>
+</tr>
+<tr class="row-even"><td><p>P36</p></td>
+<td><p>SDIO_CK</p></td>
+<td></td>
+<td><p>S37</p></td>
+<td><p>[STRIKEOUT:USB3_VBUS_DET]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P37</p></td>
+<td><p>SDIO_PWR_EN</p></td>
+<td></td>
+<td><p>S38</p></td>
+<td><p>AUDIO_MCK</p></td>
+</tr>
+<tr class="row-even"><td><p>P38</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S39</p></td>
+<td><p>I2S0_LRCK</p></td>
+</tr>
+<tr class="row-odd"><td><p>P39</p></td>
+<td><p>SDIO_D0</p></td>
+<td></td>
+<td><p>S40</p></td>
+<td><p>I2S0_SDOUT</p></td>
+</tr>
+<tr class="row-even"><td><p>P40</p></td>
+<td><p>SDIO_D1</p></td>
+<td></td>
+<td><p>S41</p></td>
+<td><p>I2S0_SDIN</p></td>
+</tr>
+<tr class="row-odd"><td><p>P41</p></td>
+<td><p>SDIO_D2</p></td>
+<td></td>
+<td><p>S42</p></td>
+<td><p>I2S0_CK</p></td>
+</tr>
+<tr class="row-even"><td><p>P42</p></td>
+<td><p>SDIO_D3</p></td>
+<td></td>
+<td><p>S43</p></td>
+<td><p>[STRIKEOUT:ESPI_ALERT0#]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P43</p></td>
+<td><p>SPI0_CS0#</p></td>
+<td></td>
+<td><p>S44</p></td>
+<td><p>[STRIKEOUT:ESPI_ALERT1#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P44</p></td>
+<td><p>SPI0_CK</p></td>
+<td></td>
+<td><p>S45</p></td>
+<td><p>MDIO_CLK</p></td>
+</tr>
+<tr class="row-odd"><td><p>P45</p></td>
+<td><p>SPI0_DIN</p></td>
+<td></td>
+<td><p>S46</p></td>
+<td><p>MDIO_DAT</p></td>
+</tr>
+<tr class="row-even"><td><p>P46</p></td>
+<td><p>SPI0_DO</p></td>
+<td></td>
+<td><p>S47</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P47</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S48</p></td>
+<td><p>I2C_GP_CK</p></td>
+</tr>
+<tr class="row-even"><td><p>P48</p></td>
+<td><p>[STRIKEOUT:SATA_TX+]</p></td>
+<td></td>
+<td><p>S49</p></td>
+<td><p>I2C_GP_DAT</p></td>
+</tr>
+<tr class="row-odd"><td><p>P49</p></td>
+<td><p>[STRIKEOUT:SATA_TX-]</p></td>
+<td></td>
+<td><p>S50</p></td>
+<td><p>[STRIKEOUT:HDA_SYNC /] I2S2_LRCK</p></td>
+</tr>
+<tr class="row-even"><td><p>P50</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S51</p></td>
+<td><p>[STRIKEOUT:HDA_SDO /] I2S2_SDOUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>P51</p></td>
+<td><p>[STRIKEOUT:SATA_RX+]</p></td>
+<td></td>
+<td><p>S52</p></td>
+<td><p>[STRIKEOUT:HDA_SDI /] I2S2_SDIN</p></td>
+</tr>
+<tr class="row-even"><td><p>P52</p></td>
+<td><p>[STRIKEOUT:SATA_RX-]</p></td>
+<td></td>
+<td><p>S53</p></td>
+<td><p>[STRIKEOUT:HDA_CK /] I2S2_CK</p></td>
+</tr>
+<tr class="row-odd"><td><p>P53</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S54</p></td>
+<td><p>[STRIKEOUT:SATA_ACT#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P54</p></td>
+<td><p>[STRIKEOUT:ESPI_CS0# /] SPI1_CS0#</p></td>
+<td></td>
+<td><p>S55</p></td>
+<td><p>[STRIKEOUT:USB5_EN_OC#]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P55</p></td>
+<td><p>[STRIKEOUT:ESPI_CS1# /] SPI1_CS1#</p></td>
+<td></td>
+<td><p>S56</p></td>
+<td><p>[STRIKEOUT:ESPI_IO_2]</p></td>
+</tr>
+<tr class="row-even"><td><p>P56</p></td>
+<td><p>[STRIKEOUT:ESPI_CK /] SPI1_CK</p></td>
+<td></td>
+<td><p>S57</p></td>
+<td><p>[STRIKEOUT:ESPI_IO_3]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P57</p></td>
+<td><p>[STRIKEOUT:ESPI_IO_1 /] SPI1_DIN</p></td>
+<td></td>
+<td><p>S58</p></td>
+<td><p>[STRIKEOUT:ESPI_RESET#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P58</p></td>
+<td><p>[STRIKEOUT:ESPI_IO_0 /] <strong>SPI1_DO</strong></p></td>
+<td></td>
+<td><p>S59</p></td>
+<td><p>[STRIKEOUT:USB5+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P59</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S60</p></td>
+<td><p>[STRIKEOUT:USB5-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P60</p></td>
+<td><p>USB0+</p></td>
+<td></td>
+<td><p>S61</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P61</p></td>
+<td><p>USB0-</p></td>
+<td></td>
+<td><p>S62</p></td>
+<td><p>[STRIKEOUT:USB3_SSTX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P62</p></td>
+<td><p>[STRIKEOUT:USB0_EN_OC#]</p></td>
+<td></td>
+<td><p>S63</p></td>
+<td><p>[STRIKEOUT:USB3_SSTX-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P63</p></td>
+<td><p>USB0_VBUS_DET</p></td>
+<td></td>
+<td><p>S64</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P64</p></td>
+<td><p>USB0_OTG_ID</p></td>
+<td></td>
+<td><p>S65</p></td>
+<td><p>[STRIKEOUT:USB3_SSRX+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P65</p></td>
+<td><p>USB1+</p></td>
+<td></td>
+<td><p>S66</p></td>
+<td><p>[STRIKEOUT:USB3_SSRX-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P66</p></td>
+<td><p>USB1-</p></td>
+<td></td>
+<td><p>S67</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P67</p></td>
+<td><p>USB1_EN_OC#</p></td>
+<td></td>
+<td><p>S68</p></td>
+<td><p>USB3+</p></td>
+</tr>
+<tr class="row-even"><td><p>P68</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S69</p></td>
+<td><p>USB3-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P69</p></td>
+<td><p>USB2+</p></td>
+<td></td>
+<td><p>S70</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P70</p></td>
+<td><p>USB2-</p></td>
+<td></td>
+<td><p>S71</p></td>
+<td><p>[STRIKEOUT:USB2_SSTX+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P71</p></td>
+<td><p>USB2_EN_OC#</p></td>
+<td></td>
+<td><p>S72</p></td>
+<td><p>[STRIKEOUT:USB2_SSTX-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P72</p></td>
+<td><p>RSVD</p></td>
+<td></td>
+<td><p>S73</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P73</p></td>
+<td><p>RSVD</p></td>
+<td></td>
+<td><p>S74</p></td>
+<td><p>[STRIKEOUT:USB2_SSRX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P74</p></td>
+<td><p>USB3_EN_OC#</p>
+<p>Key</p>
+</td>
+<td></td>
+<td><p>S75</p></td>
+<td><p>[STRIKEOUT:USB2_SSRX-]</p>
+<p>Key</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>P75</p></td>
+<td><p>[STRIKEOUT:PCIE_A_RST#]</p></td>
+<td></td>
+<td><p>S76</p></td>
+<td><p>[STRIKEOUT:PCIE_B_RST#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P76</p></td>
+<td><p>USB4_EN_OC#</p></td>
+<td></td>
+<td><p>S77</p></td>
+<td><p>[STRIKEOUT:PCIE_C_RST#]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P77</p></td>
+<td><p>[STRIKEOUT:PCIE_B_CKREQ#]</p></td>
+<td></td>
+<td><p>S78</p></td>
+<td><p>[STRIKEOUT:PCIE_C_RX+ / SERDES_2_RX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P78</p></td>
+<td><p>[STRIKEOUT:PCIE_A_CKREQ#]</p></td>
+<td></td>
+<td><p>S79</p></td>
+<td><p>[STRIKEOUT:PCIE_C_RX- / SERDES_2_RX-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P79</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S80</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P80</p></td>
+<td><p>[STRIKEOUT:PCIE_C_REFCK+]</p></td>
+<td></td>
+<td><p>S81</p></td>
+<td><p>[STRIKEOUT:PCIE_C_TX+ / SERDES_2_TX+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P81</p></td>
+<td><p>[STRIKEOUT:PCIE_C_REFCK-]</p></td>
+<td></td>
+<td><p>S82</p></td>
+<td><p>[STRIKEOUT:PCIE_C_TX- / SERDES_2_TX-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P82</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S83</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P83</p></td>
+<td><p>[STRIKEOUT:PCIE_A_REFCK+]</p></td>
+<td></td>
+<td><p>S84</p></td>
+<td><p>[STRIKEOUT:PCIE_B_REFCK+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P84</p></td>
+<td><p>[STRIKEOUT:PCIE_A_REFCK-]</p></td>
+<td></td>
+<td><p>S85</p></td>
+<td><p>[STRIKEOUT:PCIE_B_REFCK-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P85</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S86</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P86</p></td>
+<td><p>[STRIKEOUT:PCIE_A_RX+]</p></td>
+<td></td>
+<td><p>S87</p></td>
+<td><p>[STRIKEOUT:PCIE_B_RX+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P87</p></td>
+<td><p>[STRIKEOUT:PCIE_A_RX-]</p></td>
+<td></td>
+<td><p>S88</p></td>
+<td><p>[STRIKEOUT:PCIE_B_RX-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P88</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S89</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P89</p></td>
+<td><p>[STRIKEOUT:PCIE_A_TX+]</p></td>
+<td></td>
+<td><p>S90</p></td>
+<td><p>[STRIKEOUT:PCIE_B_TX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P90</p></td>
+<td><p>[STRIKEOUT:PCIE_A_TX-]</p></td>
+<td></td>
+<td><p>S91</p></td>
+<td><p>[STRIKEOUT:PCIE_B_TX-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P91</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S92</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P92</p></td>
+<td><p>[STRIKEOUT:HDMI_D2+ / DP1_LANE0+]</p></td>
+<td></td>
+<td><p>S93</p></td>
+<td><p>[STRIKEOUT:DP0_LANE0+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P93</p></td>
+<td><p>[STRIKEOUT:HDMI_D2- / DP1_LANE0-]</p></td>
+<td></td>
+<td><p>S94</p></td>
+<td><p>[STRIKEOUT:DP0_LANE0-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P94</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S95</p></td>
+<td><p>[STRIKEOUT:DP0_AUX_SEL]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P95</p></td>
+<td><p>[STRIKEOUT:HDMI_D1+ / DP1_LANE1+]</p></td>
+<td></td>
+<td><p>S96</p></td>
+<td><p>[STRIKEOUT:DP0_LANE1+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P96</p></td>
+<td><p>[STRIKEOUT:HDMI_D1- / DP1_LANE1-]</p></td>
+<td></td>
+<td><p>S97</p></td>
+<td><p>[STRIKEOUT:DP0_LANE1-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P97</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S98</p></td>
+<td><p>[STRIKEOUT:DP0_HPD]</p></td>
+</tr>
+<tr class="row-even"><td><p>P98</p></td>
+<td><p>[STRIKEOUT:HDMI_D0+ / DP1_LANE2+]</p></td>
+<td></td>
+<td><p>S99</p></td>
+<td><p>[STRIKEOUT:DP0_LANE2+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P99</p></td>
+<td><p>[STRIKEOUT:HDMI_D0- / DP1_LANE2-]</p></td>
+<td></td>
+<td><p>S100</p></td>
+<td><p>[STRIKEOUT:DP0_LANE2-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P100</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S101</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P101</p></td>
+<td><p>[STRIKEOUT:HDMI_CK+ / DP1_LANE3+]</p></td>
+<td></td>
+<td><p>S102</p></td>
+<td><p>[STRIKEOUT:DP0_LANE3+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P102</p></td>
+<td><p>[STRIKEOUT:HDMI_CK- / DP1_LANE3-]</p></td>
+<td></td>
+<td><p>S103</p></td>
+<td><p>[STRIKEOUT:DP0_LANE3-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P103</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S104</p></td>
+<td><p>[STRIKEOUT:USB3_OTG_ID]</p></td>
+</tr>
+<tr class="row-even"><td><p>P104</p></td>
+<td><p>[STRIKEOUT:HDMI_HPD / DP1_HPD]</p></td>
+<td></td>
+<td><p>S105</p></td>
+<td><p>[STRIKEOUT:DP0_AUX+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P105</p></td>
+<td><p>[STRIKEOUT:HDMI_CTRL_CK / DP1_AUX+]</p></td>
+<td></td>
+<td><p>S106</p></td>
+<td><p>[STRIKEOUT:DP0_AUX-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P106</p></td>
+<td><p>[STRIKEOUT:HDMI_CTRL_DAT / DP1_AUX-]</p></td>
+<td></td>
+<td><p>S107</p></td>
+<td><p>[STRIKEOUT:LCD1_BKLT_EN]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P107</p></td>
+<td><p>[STRIKEOUT:DP1_AUX_SEL]</p></td>
+<td></td>
+<td><p>S108</p></td>
+<td><p>[STRIKEOUT:LVDS1_CK+ / eDP1_AUX+ / DSI1_CLK+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P108</p></td>
+<td><p>GPIO0 [STRIKEOUT:/ CAM0_PWR#]</p></td>
+<td></td>
+<td><p>S109</p></td>
+<td><p>[STRIKEOUT:LVDS1_CK- / eDP1_AUX- / DSI1_CLK-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P109</p></td>
+<td><p>GPIO1 / CAM1_PWR#</p></td>
+<td></td>
+<td><p>S110</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P110</p></td>
+<td><p>GPIO2 [STRIKEOUT:/ CAM0_RST#]</p></td>
+<td></td>
+<td><p>S111</p></td>
+<td><p>[STRIKEOUT:LVDS1_0+ / eDP1_TX0+ / DSI1_D0+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P111</p></td>
+<td><p>GPIO3 / CAM1_RST#</p></td>
+<td></td>
+<td><p>S112</p></td>
+<td><p>[STRIKEOUT:LVDS1_0- / eDP1_TX0- / DSI1_D0-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P112</p></td>
+<td><p>GPIO4 [STRIKEOUT:/ HDA_RST#]</p></td>
+<td></td>
+<td><p>S113</p></td>
+<td><p>[STRIKEOUT:eDP1_HPD / DSI1_TE]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P113</p></td>
+<td><p>GPIO5 / PWM_OUT</p></td>
+<td></td>
+<td><p>S114</p></td>
+<td><p>[STRIKEOUT:LVDS1_1+ / eDP1_TX1+ / DSI1_D1+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P114</p></td>
+<td><p>GPIO6 [STRIKEOUT:/ TACHIN]</p></td>
+<td></td>
+<td><p>S115</p></td>
+<td><p>[STRIKEOUT:LVDS1_1- / eDP1_TX1- / DSI1_D1-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P115</p></td>
+<td><p>GPIO7</p></td>
+<td></td>
+<td><p>S116</p></td>
+<td><p>[STRIKEOUT:LCD1_VDD_EN]</p></td>
+</tr>
+<tr class="row-even"><td><p>P116</p></td>
+<td><p>GPIO8</p></td>
+<td></td>
+<td><p>S117</p></td>
+<td><p>[STRIKEOUT:LVDS1_2+ / eDP1_TX2+ / DSI1_D2+]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P117</p></td>
+<td><p>GPIO9</p></td>
+<td></td>
+<td><p>S118</p></td>
+<td><p>[STRIKEOUT:LVDS1_2- / eDP1_TX2- / DSI1_D2-]</p></td>
+</tr>
+<tr class="row-even"><td><p>P118</p></td>
+<td><p>GPIO10</p></td>
+<td></td>
+<td><p>S119</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P119</p></td>
+<td><p>GPIO11</p></td>
+<td></td>
+<td><p>S120</p></td>
+<td><p>[STRIKEOUT:LVDS1_3+ / eDP1_TX3+ / DSI1_D3+]</p></td>
+</tr>
+<tr class="row-even"><td><p>P120</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S121</p></td>
+<td><p>[STRIKEOUT:LVDS1_3- / eDP1_TX3- / DSI1_D3-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P121</p></td>
+<td><p>I2C_PM_CK</p></td>
+<td></td>
+<td><p>S122</p></td>
+<td><p>[STRIKEOUT:LCD1_BKLT_PWM]</p></td>
+</tr>
+<tr class="row-even"><td><p>P122</p></td>
+<td><p>I2C_PM_DAT</p></td>
+<td></td>
+<td><p>S123</p></td>
+<td><p>GPIO13</p></td>
+</tr>
+<tr class="row-odd"><td><p>P123</p></td>
+<td><p>BOOT_SEL0#</p></td>
+<td></td>
+<td><p>S124</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P124</p></td>
+<td><p>BOOT_SEL1#</p></td>
+<td></td>
+<td><p>S125</p></td>
+<td><p>LVDS0_0+ / [STRIKEOUT:eDP0_TX0+] / DSI0_D0+</p></td>
+</tr>
+<tr class="row-odd"><td><p>P125</p></td>
+<td><p>BOOT_SEL2#</p></td>
+<td></td>
+<td><p>S126</p></td>
+<td><p>LVDS0_0- / [STRIKEOUT:eDP0_TX0-] / DSI0_D0-</p></td>
+</tr>
+<tr class="row-even"><td><p>P126</p></td>
+<td><p>RESET_OUT#</p></td>
+<td></td>
+<td><p>S127</p></td>
+<td><p>LCD0_BKLT_EN</p></td>
+</tr>
+<tr class="row-odd"><td><p>P127</p></td>
+<td><p>RESET_IN#</p></td>
+<td></td>
+<td><p>S128</p></td>
+<td><p>LVDS0_1+ / [STRIKEOUT:eDP0_TX1+] / DSI0_D1+</p></td>
+</tr>
+<tr class="row-even"><td><p>P128</p></td>
+<td><p>POWER_BTN#</p></td>
+<td></td>
+<td><p>S129</p></td>
+<td><p>LVDS0_1- / [STRIKEOUT:eDP0_TX1-] / DSI0_D1-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P129</p></td>
+<td><p>SER0_TX</p></td>
+<td></td>
+<td><p>S130</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P130</p></td>
+<td><p>SER0_RX</p></td>
+<td></td>
+<td><p>S131</p></td>
+<td><p>LVDS0_2+/[STRIKEOUT:eDP0_TX2+]/ DSI0_D2+</p></td>
+</tr>
+<tr class="row-odd"><td><p>P131</p></td>
+<td><p>SER0_RTS#</p></td>
+<td></td>
+<td><p>S132</p></td>
+<td><p>LVDS0_2- / [STRIKEOUT:eDP0_TX2-] / DSI0_D2-</p></td>
+</tr>
+<tr class="row-even"><td><p>P132</p></td>
+<td><p>SER0_CTS#</p></td>
+<td></td>
+<td><p>S133</p></td>
+<td><p>LCD0_VDD_EN</p></td>
+</tr>
+<tr class="row-odd"><td><p>P133</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S134</p></td>
+<td><p>LVDS0_CK+/[STRIKEOUT:eDP0_AUX]/ DSI0_CLK+</p></td>
+</tr>
+<tr class="row-even"><td><p>P134</p></td>
+<td><p>[STRIKEOUT:SER1_TX]</p></td>
+<td></td>
+<td><p>S135</p></td>
+<td><p>LVDS0_CK-/[STRIKEOUT:eDP0_AUX-]/ DSI0_CLK-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P135</p></td>
+<td><p>[STRIKEOUT:SER1_RX]</p></td>
+<td></td>
+<td><p>S136</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>P136</p></td>
+<td><p>SER2_TX</p></td>
+<td></td>
+<td><p>S137</p></td>
+<td><p>LVDS0_3+ / [STRIKEOUT:eDP0_TX3+] / DSI0_D3+</p></td>
+</tr>
+<tr class="row-odd"><td><p>P137</p></td>
+<td><p>SER2_RX</p></td>
+<td></td>
+<td><p>S138</p></td>
+<td><p>LVDS0_3- / [STRIKEOUT:eDP0_TX3-] / DSI0_D3-</p></td>
+</tr>
+<tr class="row-even"><td><p>P138</p></td>
+<td><p>SER2_RTS#</p></td>
+<td></td>
+<td><p>S139</p></td>
+<td><p>I2C_LCD_CK</p></td>
+</tr>
+<tr class="row-odd"><td><p>P139</p></td>
+<td><p>SER2_CTS#</p></td>
+<td></td>
+<td><p>S140</p></td>
+<td><p>I2C_LCD_DAT</p></td>
+</tr>
+<tr class="row-even"><td><p>P140</p></td>
+<td><p>[STRIKEOUT:SER3_TX]</p></td>
+<td></td>
+<td><p>S141</p></td>
+<td><p>LCD0_BKLT_PWM</p></td>
+</tr>
+<tr class="row-odd"><td><p>P141</p></td>
+<td><p>[STRIKEOUT:SER3_RX]</p></td>
+<td></td>
+<td><p>S142</p></td>
+<td><p>GPIO12</p></td>
+</tr>
+<tr class="row-even"><td><p>P142</p></td>
+<td><p>GND</p></td>
+<td></td>
+<td><p>S143</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>P143</p></td>
+<td><p>CAN0_TX</p></td>
+<td></td>
+<td><p>S144</p></td>
+<td><p>[STRIKEOUT:eDP0_HPD /] DSI0_TE</p></td>
+</tr>
+<tr class="row-even"><td><p>P144</p></td>
+<td><p>CAN0_RX</p></td>
+<td></td>
+<td><p>S145</p></td>
+<td><p>WDT_TIME_OUT#</p></td>
+</tr>
+<tr class="row-odd"><td><p>P145</p></td>
+<td><p>[STRIKEOUT:CAN1_TX]</p></td>
+<td></td>
+<td><p>S146</p></td>
+<td><p>[STRIKEOUT:PCIE_WAKE#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P146</p></td>
+<td><p>[STRIKEOUT:CAN1_RX]</p></td>
+<td></td>
+<td><p>S147</p></td>
+<td><p>VDD_RTC</p></td>
+</tr>
+<tr class="row-odd"><td><p>P147</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S148</p></td>
+<td><p>LID#</p></td>
+</tr>
+<tr class="row-even"><td><p>P148</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S149</p></td>
+<td><p>SLEEP#</p></td>
+</tr>
+<tr class="row-odd"><td><p>P149</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S150</p></td>
+<td><p>VIN_PWR_BAD#</p></td>
+</tr>
+<tr class="row-even"><td><p>P150</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S151</p></td>
+<td><p>[STRIKEOUT:CHARGING#]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P151</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S152</p></td>
+<td><p>[STRIKEOUT:CHARGER_PRSNT#]</p></td>
+</tr>
+<tr class="row-even"><td><p>P152</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S153</p></td>
+<td><p>CARRIER_STBY#</p></td>
+</tr>
+<tr class="row-odd"><td><p>P153</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S154</p></td>
+<td><p>CARRIER_PWR_ON</p></td>
+</tr>
+<tr class="row-even"><td><p>P154</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S155</p></td>
+<td><p>FORCE_RECOV#</p></td>
+</tr>
+<tr class="row-odd"><td><p>P155</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S156</p></td>
+<td><p>BATLOW#</p></td>
+</tr>
+<tr class="row-even"><td><p>P156</p></td>
+<td><p>VDD_IN</p></td>
+<td></td>
+<td><p>S157</p></td>
+<td><p>TEST#</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td><p>S158</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/doc-icon.png"><img alt="../_images/doc-icon.png" class="align-left" src="../_images/doc-icon.png" style="width: 30px; height: 30px;" /></a>
+<p><strong>Note</strong>: [STRIKEOUT:STRIKETHROUGH] strike-through entries are not supported functions on this product</p>
+<p><br /></p>
+<div class="section" id="signal-terminology-descriptions">
+<h2>Signal Terminology Descriptions<a class="headerlink" href="#signal-terminology-descriptions" title="Permalink to this headline">¶</a></h2>
+<p>Meaning of the terms used for signal description tables</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 91%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Term</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I</p></td>
+<td><p>Input to the module</p></td>
+</tr>
+<tr class="row-even"><td><p>O</p></td>
+<td><p>Output from the module</p></td>
+</tr>
+<tr class="row-odd"><td><p>O OD</p></td>
+<td><p>Open drain output from the module</p></td>
+</tr>
+<tr class="row-even"><td><p>I OD</p></td>
+<td><p>Open drain input to the module, with mandatory PU (pull up) on module</p></td>
+</tr>
+<tr class="row-odd"><td><p>OD</p></td>
+<td><p>Open drain</p></td>
+</tr>
+<tr class="row-even"><td><p>I/O</p></td>
+<td><p>Bi-directional Input/Output</p></td>
+</tr>
+<tr class="row-odd"><td><p>PU</p></td>
+<td><p>PU (pull-up) resistor on module</p></td>
+</tr>
+<tr class="row-even"><td><p>PD</p></td>
+<td><p>PD (pull-down) resistor on module</p></td>
+</tr>
+<tr class="row-odd"><td><p>VDD_IN</p></td>
+<td><p>Main power source  from carrier to module</p></td>
+</tr>
+<tr class="row-even"><td><p>CMOS</p></td>
+<td><p>Logic input or output</p></td>
+</tr>
+<tr class="row-odd"><td><p>GBE MDI</p></td>
+<td><p>Differential analog signaling for Gigabit Media Dependent Interface</p></td>
+</tr>
+<tr class="row-even"><td><p>LVDS DP</p></td>
+<td><p>Low Voltage Differential Signal for DisplayPort interface</p></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS D-PHY</p></td>
+<td><p>Low Voltage Differential Signal for MIPI CSI-2 cameras and DSI displays</p></td>
+</tr>
+<tr class="row-even"><td><p>LVDS M-PHY</p></td>
+<td><p>Low Voltage Differential Signal for MIPI CSI-3 cameras</p></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS LCD</p></td>
+<td><p>Low Voltage Differential Signal for LCD displays</p></td>
+</tr>
+<tr class="row-even"><td><p>LVDS PCIE</p></td>
+<td><p>Low Voltage Differential Signal for PCIe</p></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS SATA</p></td>
+<td><p>Low Voltage Differential Signal for SATA</p></td>
+</tr>
+<tr class="row-even"><td><p>TMDS HDMI</p></td>
+<td><p>Transition Minimized Differential Signal for HDMI displays</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB</p></td>
+<td><p>DC coupled differential signaling for traditional (non-Superspeed) USB signals</p></td>
+</tr>
+<tr class="row-even"><td><p>USB SS</p></td>
+<td><p>Differential signal for SuperSpeed USB signals</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB VBUS 5V</p></td>
+<td><p>5V tolerant input for USB VBUS detection</p></td>
+</tr>
+<tr class="row-even"><td><p>3.3V</p></td>
+<td><p>3.3V Power Domain: Active while CARRIER_PWRON is high and CARRIER_SBY# is NOT active (i.e. both signals are high)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.8V</p></td>
+<td><p>1.8V Power Domain: Active while CARRIER_PWRON is high and CARRIER_SBY# is NOT active (i.e. both signals are high)</p></td>
+</tr>
+<tr class="row-even"><td><p>3.3Vsb</p></td>
+<td><p>3.3V Power Domain: Active while CARRIER_PWRON is high (regardless of CARRIER_SBY#)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.8Vsb</p></td>
+<td><p>1.8V Power Domain: Active while CARRIER_PWRON is high (regardless of CARRIER_SBY#)</p></td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<div class="section" id="the-first-display-interface">
+<h3>The First Display Interface<a class="headerlink" href="#the-first-display-interface" title="Permalink to this headline">¶</a></h3>
+<p>This is a group of 30-pins that is split into a channel 0 and channel 1
+and can support either dual channel LVDS ports, 2 separate single
+channel LVDS ports, 2 MIPI DSI ports of 4 lanes each or 2 eDP ports 4
+lanes each. A mix of different display type such as DSI and eDP is also
+permitted.</p>
+<p>Configuration and actual display ports supported greatly depends on the
+capabilities and internal multiplexing of the silicon used in this
+desing.</p>
+<p>Subsequent tables for LVDS, DSI and eDP describe signals that are
+supported on this product. Unsupported signals are crossed out
+([STRIKEOUT:STRIKETHROUGH]) or in case multiplexed (either or) this will
+be described in NOTES.</p>
+<p><br /></p>
+<a class="reference internal image-reference" href="../_images/doc-icon.png"><img alt="../_images/doc-icon.png" class="align-left" src="../_images/doc-icon.png" style="width: 30px; height: 30px;" /></a>
+<p><strong>Note</strong>: DSI0 mode or LVDS0 can be selected at boot time through DVT (device tree), DSI0 is default</p>
+<p><br /></p>
+<div class="section" id="lvds0-mode">
+<h4>LVDS0 mode<a class="headerlink" href="#lvds0-mode" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 49%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O Type</strong></p></th>
+<th class="head"><p><strong>I/O Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LVDS0_0+</p></td>
+<td><p>S125</p></td>
+<td><p>Primary LVDS channel differential pair data lines</p></td>
+<td><p>O LVDS</p></td>
+<td></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS0_0-</p></td>
+<td><p>S126</p></td>
+<td></td>
+<td><p>LCD</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LVDS0_1+</p></td>
+<td><p>S128</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS0_1 -</p></td>
+<td><p>S129</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LVDS0_2+</p></td>
+<td><p>S131</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS0_2-</p></td>
+<td><p>S132</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LVDS0_3+</p></td>
+<td><p>S137</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS0_3-</p></td>
+<td><p>S138</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LVDS0_CK+</p></td>
+<td><p>S134</p></td>
+<td><p>Primary LVDS channel differential pair clock lines</p></td>
+<td><p>O LVDS</p></td>
+<td></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LVDS0_CK-</p></td>
+<td><p>S135</p></td>
+<td></td>
+<td><p>LCD</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LCD0_VDD_EN</p></td>
+<td><p>S133</p></td>
+<td><p>Primary LVDS channel power enable, active high</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LCD0_BKLT_EN</p></td>
+<td><p>S127</p></td>
+<td><p>Primary LVDS channel backlight enable, active high</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LCD0_BKLT_PWM</p></td>
+<td><p>S141</p></td>
+<td><p>Primary LVDS channel brightness control through pulse width modulation (PWM)</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I2C_LCD_DAT</p></td>
+<td><p>S140</p></td>
+<td><p>DDC data line used for flat panel detection and control</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 2k2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>I2C_LCD_CK</p></td>
+<td><p>S139</p></td>
+<td><p>DDC clock line used for flat panel detection and control</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 2k2</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dsi-mode">
+<h4>DSI mode<a class="headerlink" href="#dsi-mode" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 6%" />
+<col style="width: 46%" />
+<col style="width: 4%" />
+<col style="width: 9%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O Level</strong></p></th>
+<th class="head"><p><strong>Power Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>DSI0_D0+</p></td>
+<td><p>S125</p></td>
+<td><p>Primary DSI panel differential pair data lines</p></td>
+<td><p>O LVDS</p></td>
+<td></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSI0_D0-</p></td>
+<td><p>S126</p></td>
+<td></td>
+<td><p>D-PHY</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>DSI0_D1+</p></td>
+<td><p>S128</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSI0_D1-</p></td>
+<td><p>S129</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>DSI0_D2+</p></td>
+<td><p>S131</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSI0_D2-</p></td>
+<td><p>S132</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>DSI0_D3+</p></td>
+<td><p>S137</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSI0_D3-</p></td>
+<td><p>S138</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>DSI0_CLK+</p></td>
+<td><p>S134</p></td>
+<td><p>Primary DSI panel differential pair clock lines.</p></td>
+<td><p>O LVDS</p></td>
+<td></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSI0_CLK-</p></td>
+<td><p>S135</p></td>
+<td></td>
+<td><p>D-PHY</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LCD0_VDD_EN</p></td>
+<td><p>S133</p></td>
+<td><p>Primary panel power enable, active high</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LCD0_BKLT_EN</p></td>
+<td><p>S127</p></td>
+<td><p>Primary panel backlight enable, active high</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>LCD0_BKLT_PWM</p></td>
+<td><p>S141</p></td>
+<td><p>Primary panel brightness control through pulse width modulation (PWM)</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>DSI0_TE</p></td>
+<td><p>S144</p></td>
+<td><p>Primary DSI panel tearing effect sigal</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>I2C_LCD_DAT</p></td>
+<td><p>S140</p></td>
+<td><p>DDC data line used for flat panel detection and control</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 2k2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I2C_LCD_CK</p></td>
+<td><p>S139</p></td>
+<td><p>DDC clock line used for flat panel detection and control</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 2k2</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="second-third-display-interface">
+<h3>Second / Third Display Interface<a class="headerlink" href="#second-third-display-interface" title="Permalink to this headline">¶</a></h3>
+<p>All the below signals on Second Interface are not supported</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 44%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>HDMI signal names</strong></p></th>
+<th class="head"><p><strong>DP++ signal names</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>P92</p></td>
+<td><p>[STRIKEOUT:HDMI_D2+</p></td>
+<td><p>[STRIKEOUT:DP1_LANE0+</p></td>
+</tr>
+<tr class="row-even"><td><p>P93</p></td>
+<td><p>HDMI_D2-</p></td>
+<td><p>DP1_LANE0-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P95</p></td>
+<td><p>HDMI_D1+</p></td>
+<td><p>DP1_LANE1+</p></td>
+</tr>
+<tr class="row-even"><td><p>P96</p></td>
+<td><p>HDMI_D1-</p></td>
+<td><p>DP1_LANE1-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P98</p></td>
+<td><p>HDMI_D0+</p></td>
+<td><p>DP1_LANE2+</p></td>
+</tr>
+<tr class="row-even"><td><p>P99</p></td>
+<td><p>HDMI_D0-]</p></td>
+<td><p>DP1_LANE2-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P101</p></td>
+<td><p>[STRIKEOUT:HDMI_CK+</p></td>
+<td><p>[STRIKEOUT:DP1_LANE3+</p></td>
+</tr>
+<tr class="row-even"><td><p>P102</p></td>
+<td><p>HDMI_CK-]</p></td>
+<td><p>DP1_LANE3-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>S105</p></td>
+<td><p>[STRIKEOUT:HDMI_CTRL_CK]</p></td>
+<td><p>[STRIKEOUT:DP1_AUX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>S106</p></td>
+<td><p>[STRIKEOUT:HDMI_CTRL_DAT]</p></td>
+<td><p>[STRIKEOUT:DP1_AUX-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P104</p></td>
+<td><p>[STRIKEOUT:HDMI_HPD]</p></td>
+<td><p>[STRIKEOUT:DP1_HPD]</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>P107</p></td>
+<td><p>[STRIKEOUT: ]</p></td>
+<td><p>[STRIKEOUT:DP1_AUX_SEL]</p></td>
+</tr>
+</tbody>
+</table>
+<p>All the below signals on Third Interface are not supported</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>DP++ signal names</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>P92</p></td>
+<td><p>[STRIKEOUT:DP0_LANE0+</p></td>
+</tr>
+<tr class="row-even"><td><p>P93</p></td>
+<td><p>DP0_LANE0-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P95</p></td>
+<td><p>DP0_LANE1+</p></td>
+</tr>
+<tr class="row-even"><td><p>P96</p></td>
+<td><p>DP0_LANE1-</p></td>
+</tr>
+<tr class="row-odd"><td><p>P98</p></td>
+<td><p>DP0_LANE2+</p></td>
+</tr>
+<tr class="row-even"><td><p>P99</p></td>
+<td><p>DP0_LANE2-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P101</p></td>
+<td><p>[STRIKEOUT:DP0_LANE3+</p></td>
+</tr>
+<tr class="row-even"><td><p>P102</p></td>
+<td><p>DP0_LANE3-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>S105</p></td>
+<td><p>[STRIKEOUT:DP0_AUX+]</p></td>
+</tr>
+<tr class="row-even"><td><p>S106</p></td>
+<td><p>[STRIKEOUT:DP0_AUX-]</p></td>
+</tr>
+<tr class="row-odd"><td><p>P104</p></td>
+<td><p>[STRIKEOUT:DP0_HPD]</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>P107</p></td>
+<td><p>[STRIKEOUT:DP0_AUX_SEL]</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/doc-icon.png" id="section-2"><img alt="../_images/doc-icon.png" class="align-left" id="section-2" src="../_images/doc-icon.png" style="width: 30px; height: 30px;" /></a>
+<p><strong>Note</strong>: HDMI support up to 1920x1080 can be implemented through a DSI to HDMI on the carrier, there is a reference design based on Analog Devices’ ADV7533 MIPI/DSI Receiver with HDMI Transmitter</p>
+<p><br /></p>
+</div>
+<div class="section" id="mipi-csi1-camera">
+<h3>MIPI CSI1 (Camera)<a class="headerlink" href="#mipi-csi1-camera" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 38%" />
+<col style="width: 7%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CSI1_RX0+</p></td>
+<td><p>P7</p></td>
+<td><p>CSI1 differential input (point to point)</p></td>
+<td><p>I LVDS D-PHY</p></td>
+<td></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_RX0-</p></td>
+<td><p>P8</p></td>
+<td></td>
+<td><p>/ I LVDS M-PHY</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CSI1_RX1+</p></td>
+<td><p>P10</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_RX1-</p></td>
+<td><p>P11</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CSI1_RX2+</p></td>
+<td><p>P13</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_RX2-</p></td>
+<td><p>P14</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CSI1_RX3+</p></td>
+<td><p>P16</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_RX3-</p></td>
+<td><p>P17</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CSI1_CK+</p></td>
+<td><p>P3</p></td>
+<td><p>CSI1 differential clock input (point to point)</p></td>
+<td><p>I LVDS D-PHY</p></td>
+<td></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_CK-</p></td>
+<td><p>P4</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I2C_CAM1_DAT /</p></td>
+<td><p>S2</p></td>
+<td><p>I2C data for serial camera data support link or differential data lane</p></td>
+<td><p>I/O OD CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 2.2K</p></td>
+<td><p>MIPI-CSI 2.0 mode uses I2C_CAM1_DAT</p></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_TX-</p></td>
+<td></td>
+<td></td>
+<td><p>/ O LVDS M-PHY</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>MIPI-CSI 3.0 mode uses CSI1_TX-</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C_CAM1_CK /</p></td>
+<td><p>S1</p></td>
+<td><p>I2C clock for serial camera data support link or differential data lane</p></td>
+<td><p>O OD CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 2.2K</p></td>
+<td><p>MIPI-CSI 2.0 mode uses I2C_CAM1_CK</p></td>
+</tr>
+<tr class="row-even"><td><p>CSI1_TX+</p></td>
+<td></td>
+<td></td>
+<td><p>/ O LVDS M-PHY</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>MIPI-CSI 3.0 mode uses CSI1_TX+</p></td>
+</tr>
+<tr class="row-odd"><td><p>CAM1_PWR# /</p></td>
+<td><p>P109</p></td>
+<td><p>Camera 0 Power Enable, active low output.</p></td>
+<td><p>O CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>CAM1_PWR# is default, GPIO1 can be enabled through DVT</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CAM1_RST# /</p></td>
+<td><p>P111</p></td>
+<td><p>Camera 0 reset, active low output</p></td>
+<td><p>O CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>CAM1_PWR# is default, GPIO3 can be enabled through DVT</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO3</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CAM_MCK</p></td>
+<td><p>S6</p></td>
+<td><p>Master clock output</p></td>
+<td><p>O CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="i2s-audio">
+<h3>I2S (audio)<a class="headerlink" href="#i2s-audio" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 30%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 8%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I2S0_LRCK</p></td>
+<td><p>S39</p></td>
+<td><p>I2S0 Left &amp; Right synchronization clock</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>Module Output if CPU acts in Master Mode
+Module Input if CPU acts in Slave Mode</p></td>
+</tr>
+<tr class="row-even"><td><p>I2S0_SDOUT</p></td>
+<td><p>S40</p></td>
+<td><p>I2S0 Digital audio Output</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I2S0_SDIN</p></td>
+<td><p>S41</p></td>
+<td><p>I2S0 Digital audio Input</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>I2S0_CK</p></td>
+<td><p>S42</p></td>
+<td><p>I2S0 Digital audio clock</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>Module Output if CPU acts in Master Mode
+Module Input if CPU acts in Slave Mode</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>I2S2_LRCK</p></td>
+<td><p>S50</p></td>
+<td><p>I2S2 Left &amp; Right synchronization clock</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>Module Output if CPU acts in Master Mode
+Module Input if CPU acts in Slave Mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2S2_SDOUT</p></td>
+<td><p>S51</p></td>
+<td><p>I2S2 Digital audio Output</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>I2S2_SDIN</p></td>
+<td><p>S52</p></td>
+<td><p>I2S2 Digital audio Input</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I2S2_CK</p></td>
+<td><p>S53</p></td>
+<td><p>I2S2 Digital audio clock</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>Module Output if CPU acts in Master Mode
+Module Input if CPU acts in Slave Mode</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>AUDIO_MCK</p></td>
+<td><p>S38</p></td>
+<td><p>Master clock output to I2S codec(s)</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/doc-icon.png"><img alt="../_images/doc-icon.png" class="align-left" src="../_images/doc-icon.png" style="width: 30px; height: 30px;" /></a>
+<p><strong>Note</strong>: I2S1 signalling has been removed during update to SMARC 2.0 specification</p>
+<p><br /></p>
+</div>
+<div class="section" id="usb-ports">
+<h3>USB ports<a class="headerlink" href="#usb-ports" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 4%" />
+<col style="width: 22%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB0+</p></td>
+<td><p>P60</p></td>
+<td><p>USB differential data pairs for port 0</p></td>
+<td><p>I/O</p></td>
+<td><p>USB</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>From SOC</p></td>
+</tr>
+<tr class="row-even"><td><p>USB0-</p></td>
+<td><p>P61</p></td>
+<td></td>
+<td><p>USB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:USB0_EN_OC#]</p></td>
+<td><p>P62</p></td>
+<td><p>[STRIKEOUT:USB over-current sense for port 0]</p></td>
+<td><p>[STRIKEOUT:I/O OD
+CMOS]</p></td>
+<td><p>[STRIKEOUT:3.3Vsb / 3.3V
+]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td><p>[STRIKEOUT:PU 10k]</p></td>
+<td><p>[STRIKEOUT:Pulled low by Module OD driver to disable USB0 power. Pulled low by Carrier OD driver to indicate over-current situation.]</p></td>
+</tr>
+<tr class="row-even"><td><p>USB0_VBUS_DET</p></td>
+<td><p>P63</p></td>
+<td><p>USB port 0 host power detection,
+when this port is used as a device.</p></td>
+<td><p>I
+USB VBUS 5V</p></td>
+<td><p>USB VBUS 5V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Can be connected to a USB client port VBUS pin</p></td>
+</tr>
+<tr class="row-odd"><td><p>USB0_OTG_ID</p></td>
+<td><p>P64</p></td>
+<td><p>Input pin to announce OTG device insertion on USB 2.0 port</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>3.3Vsb / 3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB1+</p></td>
+<td><p>P65</p></td>
+<td><p>USB differential data pairs for port 1</p></td>
+<td><p>I/O</p></td>
+<td><p>USB</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>From USB HUB, alternatively USB HUB can be removed, and USB 2.0 Host directly routed to SOC</p></td>
+</tr>
+<tr class="row-even"><td><p>USB1-</p></td>
+<td><p>P66</p></td>
+<td></td>
+<td><p>USB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB1_EN_OC#</p></td>
+<td><p>P67</p></td>
+<td><p>USB over-current sense for port 1</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>3.3Vsb / 3.3V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10k</p></td>
+<td><p>Pulled low by Module OD driver to disable USB0 power. Pulled low by Carrier OD driver to indicate over-current situation.</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB2+</p></td>
+<td><p>P69</p></td>
+<td><p>USB differential data pairs for port 2</p></td>
+<td><p>I/O</p></td>
+<td><p>USB</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>From USB HUB</p></td>
+</tr>
+<tr class="row-even"><td><p>USB2-</p></td>
+<td><p>P70</p></td>
+<td></td>
+<td><p>USB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:USB2_SSRX+</p></td>
+<td><p>[STRIKEOUT:S74</p></td>
+<td><p>[STRIKEOUT:Receive signal differential pairs for SuperSpeed on port 2]</p></td>
+<td><p>[STRIKEOUT:I</p></td>
+<td><p>[STRIKEOUT:USB SS]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td><p>[STRIKEOUT: ]</p></td>
+<td><p>USB 3.0 mode not supported</p></td>
+</tr>
+<tr class="row-even"><td><p>USB2_SSRX-]</p></td>
+<td><p>S75]</p></td>
+<td></td>
+<td><p>USB SS]</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:USB2_SSTX+</p></td>
+<td><p>[STRIKEOUT:S71</p></td>
+<td><p>[STRIKEOUT:Transmit signal differential pairs for SuperSpeed on port 2]</p></td>
+<td><p>[STRIKEOUT:O</p></td>
+<td><p>[STRIKEOUT:USB SS]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td><p>[STRIKEOUT: ]</p></td>
+<td><p>USB 3.0 mode not supported</p></td>
+</tr>
+<tr class="row-even"><td><p>USB2_SSTX-]</p></td>
+<td><p>S72]</p></td>
+<td></td>
+<td><p>USB SS]</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB2_EN_OC#</p></td>
+<td><p>P71</p></td>
+<td><p>USB over-current sense for port 2</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>3.3Vsb / 3.3V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10k</p></td>
+<td><p>Pulled low by Module OD driver to disable USB0 power. Pulled low by Carrier OD driver to indicate over-current situation.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 5%" />
+<col style="width: 26%" />
+<col style="width: 4%" />
+<col style="width: 8%" />
+<col style="width: 6%" />
+<col style="width: 2%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>USB3+</p></th>
+<th class="head"><p>S68</p></th>
+<th class="head"><p>USB differential data pairs for port 3</p></th>
+<th class="head"><p>I/O</p></th>
+<th class="head"><p>USB</p></th>
+<th class="head"><p>Standby</p></th>
+<th class="head"></th>
+<th class="head"><p>From USB HUB</p></th>
+</tr>
+<tr class="row-even"><th class="head"><p>USB3-</p></th>
+<th class="head"><p>S69</p></th>
+<th class="head"></th>
+<th class="head"><p>USB</p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p>[STRIKEOUT:USB3_SSRX+</p></td>
+<td><p>[STRIKEOUT:S65</p></td>
+<td><p>[STRIKEOUT:Receive signal differential pairs for SuperSpeed on port 3]</p></td>
+<td><p>[STRIKEOUT:I</p></td>
+<td><p>[STRIKEOUT:USB SS]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td></td>
+<td><p>USB 3.0 mode not supported</p></td>
+</tr>
+<tr class="row-even"><td><p>USB3_SSRX-]</p></td>
+<td><p>S66]</p></td>
+<td></td>
+<td><p>USB SS]</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:USB3_SSTX+</p></td>
+<td><p>[STRIKEOUT:S62</p></td>
+<td><p>[STRIKEOUT:Transmit signal differential pairs for SuperSpeed on port 3]</p></td>
+<td><p>[STRIKEOUT:O</p></td>
+<td><p>[STRIKEOUT:USB SS]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td></td>
+<td><p>USB 3.0 mode not supported</p></td>
+</tr>
+<tr class="row-even"><td><p>USB3_SSTX-]</p></td>
+<td><p>S63]</p></td>
+<td></td>
+<td><p>USB SS]</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB3_EN_OC#</p></td>
+<td><p>P74</p></td>
+<td><p>USB over-current sense for port 3</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>3.3Vsb / 3.3V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10k</p></td>
+<td><p>Pulled low by Module OD driver to disable USB0 power. Pulled low by Carrier OD driver to indicate over-current situation.</p></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:USB3_VBUS_DET]</p></td>
+<td><p>S37</p></td>
+<td><p>[STRIKEOUT:USB port 3 host power detection, when this port is used as a device.]</p></td>
+<td><p>[STRIKEOUT:I
+USB VBUS 5V]</p></td>
+<td><p>[STRIKEOUT:USB VBUS 5V]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:USB3_OTG_ID]</p></td>
+<td><p>S104</p></td>
+<td><p>[STRIKEOUT:Input pin to announce OTG device insertion on USB 3.0 port]</p></td>
+<td><p>[STRIKEOUT:I
+CMOS]</p></td>
+<td><p>[STRIKEOUT:3.3Vsb / 3.3V]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB4+</p></td>
+<td><p>S35</p></td>
+<td><p>USB differential data pairs for port 4</p></td>
+<td><p>I/O</p></td>
+<td><p>USB</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>From USB HUB</p></td>
+</tr>
+<tr class="row-even"><td><p>USB4-</p></td>
+<td><p>S36</p></td>
+<td></td>
+<td><p>USB</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>USB4_EN_OC#</p></td>
+<td><p>P76</p></td>
+<td><p>USB over-current sense for port 4</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>3.3Vsb / 3.3V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10k</p></td>
+<td><p>Pulled low by Module OD driver to disable USB0 power. Pulled low by Carrier OD driver to indicate over-current situation.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/doc-icon.png"><img alt="../_images/doc-icon.png" class="align-left" src="../_images/doc-icon.png" style="width: 30px; height: 30px;" /></a>
+<p><strong>Note</strong>: USB 3 &amp; 4 ports will only be active in final design</p>
+<p><br /></p>
+</div>
+<div class="section" id="pcie-ports">
+<h3>PCIe Ports<a class="headerlink" href="#pcie-ports" title="Permalink to this headline">¶</a></h3>
+<p>This design does not support PCIe ports</p>
+</div>
+<div class="section" id="sata-ports">
+<h3>SATA Ports<a class="headerlink" href="#sata-ports" title="Permalink to this headline">¶</a></h3>
+<p>This design does not support SATA ports</p>
+</div>
+<div class="section" id="dual-lan-ports">
+<h3>Dual LAN ports<a class="headerlink" href="#dual-lan-ports" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 3%" />
+<col style="width: 47%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE0_MDI0+</p></td>
+<td><p>P30</p></td>
+<td><p>10/100 Mbps Ethernet Controller 0: Media Dependent Interface Differential Pairs 0, 1. The MDI can operate in 100, and 10Mbit/sec modes.</p></td>
+<td><p>GBE MDI</p></td>
+<td></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Twisted pair signals for external transformer.</p></td>
+</tr>
+<tr class="row-even"><td><p>GBE0_MDI0-</p></td>
+<td><p>P29</p></td>
+<td><p>100 10 _</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE0_MDI1+</p></td>
+<td><p>P27</p></td>
+<td><p>MDI[0]+/- TX+/- TX+/-</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GBE0_MDI1-</p></td>
+<td><p>P26</p></td>
+<td><p>MDI[1]+/- RX+/- RX+/-</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:GBE0_MDI2+</p></td>
+<td><p>P24</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GBE0_MDI2-</p></td>
+<td><p>P23</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE0_MDI3+</p></td>
+<td><p>P20</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GBE0_MDI3-]</p></td>
+<td><p>P19</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE0_LINK100#</p></td>
+<td><p>P21</p></td>
+<td><p>Link Speed Indication LED for GBE 0 100Mbps</p></td>
+<td><p>O OD CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Shall be able to sink 24mA or more Carrier LED current</p></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:GBE0_LINK1000#]</p></td>
+<td><p>P22</p></td>
+<td><p>[STRIKEOUT:Link Speed Indication LED for GBE 0 1000Mbps]</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Shall be able to sink 24mA or more Carrier LED current</p></td>
+</tr>
+<tr class="row-odd"><td><p>GBE0_LINK_ACT#</p></td>
+<td><p>P25</p></td>
+<td><p>Link / Activity Indication LED Driven low on Link (10, 100 mbps) Blinks on Activity</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Shall be able to sink 24mA or more Carrier LED current</p></td>
+</tr>
+<tr class="row-even"><td><p>GBE0_CTREF</p></td>
+<td><p>P28</p></td>
+<td><p>Center-Tap reference voltage for Carrier board Ethernet magnetic (if required by the Module GBE PHY)</p></td>
+<td><p>Analog</p></td>
+<td><p>0 to
+3.3V max</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:GBE0_SDP]</p></td>
+<td><p>P6</p></td>
+<td><p>[STRIKEOUT:IEEE 1588 Trigger Signal. For hardware implementation of PTP (precision time protocol)]</p></td>
+<td><p>[STRIKEOUT:IO
+CMOS]</p></td>
+<td><p>[STRIKEOUT:3.3V ]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td><p>[STRIKEOUT: ]</p></td>
+<td><p>[STRIKEOUT: ]</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE1_MDI0+</p></td>
+<td><p>S17</p></td>
+<td><p>10/100 Mbps Ethernet Controller 0: Media Dependent Interface Differential Pairs 0, 1. The MDI can operate in 100, and 10Mbit/sec modes.</p></td>
+<td><p>GBE MDI</p></td>
+<td></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Twisted pair signals for external transformer.</p></td>
+</tr>
+<tr class="row-even"><td><p>GBE1_MDI0-</p></td>
+<td><p>S18</p></td>
+<td><p>100 10 _</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE1_MDI1+</p></td>
+<td><p>S20</p></td>
+<td><p>MDI[0]+/- TX+/- TX+/-</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GBE1_MDI1-</p></td>
+<td><p>S21</p></td>
+<td><p>MDI[1]+/- RX+/- RX+/-</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:GBE1_MDI2+</p></td>
+<td><p>S23</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GBE1_MDI2-</p></td>
+<td><p>S24</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE1_MDI3+</p></td>
+<td><p>S26</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GBE1_MDI3-]</p></td>
+<td><p>S27</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GBE1_LINK100#</p></td>
+<td><p>S19</p></td>
+<td><p>Link Speed Indication LED for GBE 1 100Mbps</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Shall be able to sink 24mA or more Carrier LED current</p></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:GBE1_LINK1000#]</p></td>
+<td><p>S22</p></td>
+<td><p>[STRIKEOUT:Link Speed Indication LED for GBE 1 1000Mbps]</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Shall be able to sink 24mA or more Carrier LED current</p></td>
+</tr>
+<tr class="row-odd"><td><p>GBE1_LINK_ACT#</p></td>
+<td><p>S31</p></td>
+<td><p>Link / Activity Indication LED Driven low on Link (10, 100 mbps) Blinks on Activity</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>Shall be able to sink 24mA or more Carrier LED current</p></td>
+</tr>
+<tr class="row-even"><td><p>GBE1_CTREF</p></td>
+<td><p>S28</p></td>
+<td><p>Center-Tap reference voltage for Carrier board Ethernet magnetic `(if required by the Module GBE PHY)`</p></td>
+<td><p>Analog</p></td>
+<td><p>0 to 3.3V max</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:GBE1_SDP]</p></td>
+<td><p>P5</p></td>
+<td><p>[STRIKEOUT:IEEE 1588 Trigger Signal. For hardware implementation of PTP (precision time protocol)]</p></td>
+<td><p>IO
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sdio-sdcard">
+<h3>SDIO (SDCard)<a class="headerlink" href="#sdio-sdcard" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 2%" />
+<col style="width: 52%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 3%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SDIO_D0</p></td>
+<td><p>P39</p></td>
+<td><p>SDIO Data lines. These signals operate in push-pull mode.</p></td>
+<td><p>I/O</p></td>
+<td><p>1.8V or</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>SDIO controller will detect SD Cards voltage level (1.8V for UHS-I and 3.3V for standard) and adjust its I/O voltage level accordingly</p></td>
+</tr>
+<tr class="row-even"><td><p>SDIO_D1</p></td>
+<td><p>P40</p></td>
+<td></td>
+<td><p>CMOS</p></td>
+<td><p>3.3V</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SDIO_D2</p></td>
+<td><p>P41</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SDIO_D3</p></td>
+<td><p>P42</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SDIO_WP</p></td>
+<td><p>P33</p></td>
+<td><p>SDIO Write Protect. This signal denotes the state
+of the write-protect tab on SD cards.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 10k</p></td>
+<td><p>Pulled up on module</p></td>
+</tr>
+<tr class="row-even"><td><p>SDIO_CMD</p></td>
+<td><p>P34</p></td>
+<td><p>SDIO Command/Response. This signal is used for card initialization and for command transfers. During initialization mode this signal is open drain. During command transfer this signal is in push-pull mode.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V or
+3.3V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>SDIO controller will detect SD Cards voltage level (1.8V for UHS-I and 3.3V for standard) and adjust its I/O voltage level accordingly</p></td>
+</tr>
+<tr class="row-odd"><td><p>SDIO_CD#</p></td>
+<td><p>P35</p></td>
+<td><p>SDIO Card Detect.
+This signal indicates when a SDIO/MMC card is present.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 10k</p></td>
+<td><p>Pulled up on module</p></td>
+</tr>
+<tr class="row-even"><td><p>SDIO_CK</p></td>
+<td><p>P36</p></td>
+<td><p>SDIO Clock. With each cycle of this signal a one-bit transfer on the command and each data line occurs.</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V or
+3.3V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SDIO_PWR_EN</p></td>
+<td><p>P37</p></td>
+<td><p>SDIO Power Enable. This signal is used to
+enable the power being supplied to a SD/MMC card device.</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>3.3V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>should be driven low in STB Mode by the module</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="spi-busses">
+<h3>SPI busses<a class="headerlink" href="#spi-busses" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 4%" />
+<col style="width: 17%" />
+<col style="width: 6%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 5%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SPI0_CS0#</p></td>
+<td><p>P43</p></td>
+<td><p>SPI0 Master Chip Select 0</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>This signal can be used to select carrier SPI as boot device</p></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:SPI0_CS1#]</p></td>
+<td><p>P31</p></td>
+<td><p>[STRIKEOUT:SPI0 Master Chip Select 1]</p></td>
+<td><p>[STRIKEOUT:O
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SPI0_CK</p></td>
+<td><p>P44</p></td>
+<td><p>SPI0 Clock</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SPI0_DIN</p></td>
+<td><p>P45</p></td>
+<td><p>SPI0 Master input / Slave output</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>also referred to as MISO</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI0_DO</p></td>
+<td><p>P46</p></td>
+<td><p>SPI0 Master output / Slave input</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>also referred to as MOSI</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SPI1_CS0#</p></td>
+<td><p>P45</p></td>
+<td><p>SPI1 Master Chip Select 0</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>This signal can be used to select carrier SPI as boot device. can also be used as ESPI_CS0#</p></td>
+</tr>
+<tr class="row-even"><td><p>SPI1_CS1#</p></td>
+<td><p>P55</p></td>
+<td><p>SPI1 Master Chip Select 1</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>can also be used as ESPI_CS1#</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI1_CK</p></td>
+<td><p>P56</p></td>
+<td><p>SPI1 Clock</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>can also be used as ESPI_CK</p></td>
+</tr>
+<tr class="row-even"><td><p>SPI1_DIN</p></td>
+<td><p>P57</p></td>
+<td><p>SPI1 Master input / Slave output</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>also referred to as MISO can also be used as ESPI_IO_1</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPI1_DO</p></td>
+<td><p>P58</p></td>
+<td><p>SPI1 Master output / Slave input</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td><p>also referred to as MOSI can also be used as ESPI_IO_0</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/doc-icon.png"><img alt="../_images/doc-icon.png" class="align-left" src="../_images/doc-icon.png" style="width: 30px; height: 30px;" /></a>
+<dl class="simple">
+<dt><strong>Note</strong>: SPI0 is free to use on the carrier but support only one device through CS0 <br /> SPI1 supports a CAN bus controller on the module through CS0, that</dt><dd><p>leaves CS1 free for a device on the carrier</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="gpio">
+<h3>GPIO<a class="headerlink" href="#gpio" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 14%" />
+<col style="width: 3%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O Level</strong></p></th>
+<th class="head"><p><strong>Power Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO0</p></td>
+<td><p>P108</p></td>
+<td><p>General purpose I/O pin 0.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:GPIO1 /]</p></td>
+<td><p>P109</p></td>
+<td><p>General purpose I/O pin 1.</p></td>
+<td><p>I/O</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td><p>Default use is Camera 1 Power Enable - active low, alternative mode is GPIO1 through DTS</p></td>
+</tr>
+<tr class="row-odd"><td><p>CAM1_PWR#</p></td>
+<td></td>
+<td></td>
+<td><p>CMOS</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GPIO2</p></td>
+<td><p>P110</p></td>
+<td><p>General purpose I/O pin 2.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:GPIO3 /]</p></td>
+<td><p>P111</p></td>
+<td><p>General purpose I/O pin 3.</p></td>
+<td><p>I/O</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td><p>Default use is Camera 1 Reset - active low, alternative mode is GPIO3 through DTS</p></td>
+</tr>
+<tr class="row-even"><td><p>CAM1_RST#</p></td>
+<td></td>
+<td></td>
+<td><p>CMOS</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO4</p></td>
+<td><p>P112</p></td>
+<td><p>General purpose I/O pin 4.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GPIO5 /</p></td>
+<td><p>P113</p></td>
+<td><p>General purpose I/O pin 5.</p></td>
+<td><p>I/O</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td><p>Default is GPIO mode, alternate use is PWM output through DTS</p></td>
+</tr>
+<tr class="row-odd"><td><p>PWM_OUT</p></td>
+<td></td>
+<td></td>
+<td><p>CMOS</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GPIO6</p></td>
+<td><p>P114</p></td>
+<td><p>General purpose I/O pin 6.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO7</p></td>
+<td><p>P115</p></td>
+<td><p>General purpose I/O pin 7.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GPIO8</p></td>
+<td><p>P116</p></td>
+<td><p>General purpose I/O pin 8.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO9</p></td>
+<td><p>P117</p></td>
+<td><p>General purpose I/O pin 9.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GPIO10</p></td>
+<td><p>P118</p></td>
+<td><p>General purpose I/O pin 10.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO11</p></td>
+<td><p>P119</p></td>
+<td><p>General purpose I/O pin 11.</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GPIO12</p></td>
+<td><p>S142</p></td>
+<td><p>General purpose I/O pin 12</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td><p>advised as INT signal to I2C GPIO expander on carrier.</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPIO13</p></td>
+<td><p>S123</p></td>
+<td><p>General purpose I/O pin 13</p></td>
+<td><p>I/O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 6%" />
+<col style="width: 34%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="rubric">UART</p>
+</th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+<tr class="row-even"><th class="head"><dl class="field-list simple">
+<dt class="field-odd">name</dt>
+<dd class="field-odd"><p>uart</p>
+</dd>
+</dl>
+</th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-odd"><td><p><strong>Name</strong></p></td>
+<td><p><strong>Pin #</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+<td><p><strong>I/O
+Type</strong></p></td>
+<td><p><strong>I/O
+Level</strong></p></td>
+<td><p><strong>Power
+Domain</strong></p></td>
+<td><p><strong>PU / PD</strong></p></td>
+<td><p><strong>Comments</strong></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SER0_TX</p></td>
+<td><p>P129</p></td>
+<td><p>Asynchronous serial data output port 0</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SER0_RX</p></td>
+<td><p>P130</p></td>
+<td><p>Asynchronous serial data input port 0</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SER0_RTS#</p></td>
+<td><p>P131</p></td>
+<td><p>“Request to Send” handshake line for port 0</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SER0_CTS#</p></td>
+<td><p>P132</p></td>
+<td><p>“Clear to Send” handshake line for port 0</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:SER1_TX]</p></td>
+<td><p>P134</p></td>
+<td><p>[STRIKEOUT:Asynchronous serial data output port 1]</p></td>
+<td><p>[STRIKEOUT:O
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Runtime]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:SER1_RX]</p></td>
+<td><p>P135</p></td>
+<td><p>[STRIKEOUT:Asynchronous serial data input port 1]</p></td>
+<td><p>[STRIKEOUT:I
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Runtime]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SER2_TX</p></td>
+<td><p>P136</p></td>
+<td><p>Asynchronous serial data output port 2</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SER2_RX</p></td>
+<td><p>P137</p></td>
+<td><p>Asynchronous serial data input port 2</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SER2_RTS#</p></td>
+<td><p>P138</p></td>
+<td><p>“Request to Send” handshake line for port 2</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SER2_CTS#</p></td>
+<td><p>P139</p></td>
+<td><p>“Clear to Send” handshake line for port 2</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:SER3_TX]</p></td>
+<td><p>P140</p></td>
+<td><p>[STRIKEOUT:Asynchronous serial data output port 3]</p></td>
+<td><p>[STRIKEOUT:O
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Runtime]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:SER3_RX]</p></td>
+<td><p>P141</p></td>
+<td><p>[STRIKEOUT:Asynchronous serial data input port 3]</p></td>
+<td><p>[STRIKEOUT:I
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Runtime]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="can-bus">
+<h3>CAN bus<a class="headerlink" href="#can-bus" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 7%" />
+<col style="width: 28%" />
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 14%" />
+<col style="width: 8%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CAN0_TX</p></td>
+<td><p>P143</p></td>
+<td><p>CAN port 0 Transmit output</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CAN0_RX</p></td>
+<td><p>P144</p></td>
+<td><p>CAN port 0 Receive input</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:CAN1_TX]</p></td>
+<td><p>P145</p></td>
+<td><p>[STRIKEOUT:CAN port 1 Transmit output]</p></td>
+<td><p>[STRIKEOUT:O
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Runtime]</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>[STRIKEOUT:CAN1_RX]</p></td>
+<td><p>P146</p></td>
+<td><p>[STRIKEOUT:CAN port1 Receive input]</p></td>
+<td><p>[STRIKEOUT:I
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Runtime]</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="miscellaneous">
+<h3>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 22%" />
+<col style="width: 4%" />
+<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>TEST#</p></td>
+<td><p>S157</p></td>
+<td><p>Held low by Carrier to invoke Module vendor specific test function(s).</p></td>
+<td><p>I
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU on Module.
+Driven by OD on Carrier</p></td>
+<td><p>Module must implement PU but actual value is depended on particular module design. Carrier Board should leave this pin floating for normal operation</p></td>
+</tr>
+<tr class="row-even"><td><p>WDT_TIME_OUT#</p></td>
+<td><p>S145</p></td>
+<td><p>Watch-Dog-Timer Output, low active.</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td></td>
+<td><p>Driven only during runtime</p></td>
+</tr>
+<tr class="row-odd"><td><p>PWM_OUT</p></td>
+<td><p>P113</p></td>
+<td><p>Pulse Width Modulation (PWM) output</p></td>
+<td><p>I/O</p></td>
+<td><p>1.8V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 470K on the Module</p></td>
+<td><p>GPIO5 is the default pin configuration</p></td>
+</tr>
+<tr class="row-even"><td><p>/ GPIO5</p></td>
+<td></td>
+<td></td>
+<td><p>CMOS</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="power-and-system-management">
+<h3>Power and System Management<a class="headerlink" href="#power-and-system-management" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 2%" />
+<col style="width: 52%" />
+<col style="width: 4%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power
+Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>BATLOW#</p></td>
+<td><p>S156</p></td>
+<td><p>Battery low indication to Module. Carrier to float the line in inactive state.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Runtime</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-even"><td><p>CARRIER_PWR_ON</p></td>
+<td><p>S154</p></td>
+<td><p>Carrier board circuits (apart from power management and power path circuits) should not be powered up until the Module asserts the CARRIER_PWR_ON signal.</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8Vsb / 1.8V</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td></td>
+<td><p>On x86 designs this pin should utilize the RSM_RST# signal.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CARRIER_STBY#</p></td>
+<td><p>S153</p></td>
+<td><p>The Module shall drive this signal low when the system is in a standby power state.</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8Vsb / 1.8V</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td></td>
+<td><p>On x86 designs this pin should utilize the SUS_S3# signal.</p></td>
+</tr>
+<tr class="row-even"><td><p>CHARGER_PRSNT#</p></td>
+<td><p>S152</p></td>
+<td><p>Held low by Carrier if DC input for battery charger is present.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CHARGING#</p></td>
+<td><p>S151</p></td>
+<td><p>Held low by Carrier during battery charging. Carrier to float the line when charge is complete.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-even"><td><p>VIN_PWR_BAD#</p></td>
+<td><p>S150</p></td>
+<td><p>Power bad indication from Carrier board. Module and Carrier power supplies (other than Module and Carrier power supervisory circuits) shall not be enabled while this signal is held low by the Carrier.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>VDD_IN</p></td>
+<td><p>Standby</p></td>
+<td><p>PU</p></td>
+<td><p>Driven by OD on Carrier
+Module must implement PU but actual value is depended on particular module design.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SLEEP#</p></td>
+<td><p>S149</p></td>
+<td><p>Sleep indicator from Carrier board. May be sourced from user Sleep button or Carrier logic. Carrier to float the line in in-active state.Active low, level sensitive. Should be de-bounced on the Module.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-even"><td><p>LID#</p></td>
+<td><p>S148</p></td>
+<td><p>Lid open/close indication to Module. Low indicates lid closure (which system may use to initiate a sleep state). Carrier to float the line in in-active state. Active low, level sensitive. Should be de-bounced on the Module.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5.25]Vsb / 5.25V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-odd"><td><p>POWER_BTN#</p></td>
+<td><p>P128</p></td>
+<td><p>Power-button input from Carrier board. Carrier to float the line in in-active state. Active low, level sensitive. Should be debounced on the Module.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-even"><td><p>RESET_OUT#</p></td>
+<td><p>P126</p></td>
+<td><p>General purpose reset output to Carrier board.</p></td>
+<td><p>O
+CMOS</p></td>
+<td><p>1.8Vsb / 1.8V</p></td>
+<td><p>Standby</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>RESET_IN#</p></td>
+<td><p>P127</p></td>
+<td><p>Reset input from Carrier board. Carrier drives low to force a Module reset, floats the line otherwise.</p></td>
+<td><p>I OD
+CMOS</p></td>
+<td><p>[1.8 to 5]Vsb / 5.25V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-even"><td><p>I2C_PM_DAT</p></td>
+<td><p>P122</p></td>
+<td><p>Power management I2C bus DATA</p></td>
+<td><p>I/O OD
+CMOS</p></td>
+<td><p>1.8Vsb / 1.8V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 2k2</p></td>
+<td><p>On x86 systems these serve as SMB DATA.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C_PM_CK</p></td>
+<td><p>P121</p></td>
+<td><p>Power management I2C bus CLK</p></td>
+<td><p>O OD
+CMOS</p></td>
+<td><p>1.8Vsb / 1.8V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 2k2</p></td>
+<td><p>On x86 systems these serve as SMB CLK.
+Pulled up on module.</p></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:SMB_ALERT_1V8#]</p></td>
+<td><p>P1</p></td>
+<td><p>[STRIKEOUT:SMBus Alert# (interrupt) signal]</p></td>
+<td><p>[STRIKEOUT:I OD
+CMOS]</p></td>
+<td><p>[STRIKEOUT:[1.8 to 5]Vsb / 5.25V]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td><p>[STRIKEOUT:PU 2k2]</p></td>
+<td><p>[STRIKEOUT:only used on x86 design]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boot-select">
+<h3>Boot Select<a class="headerlink" href="#boot-select" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 2%" />
+<col style="width: 10%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O
+Type</strong></p></th>
+<th class="head"><p><strong>I/O
+Level</strong></p></th>
+<th class="head"><p><strong>Power Domain</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>BOOT_SEL0#</p></td>
+<td><p>P123</p></td>
+<td><p>Input straps determine the Module boot</p></td>
+<td><p>I OD</p></td>
+<td><p>1.8V</p></td>
+<td><p>Standby</p></td>
+<td><p>PU 10K</p></td>
+<td><p>Driven by OD on Carrier.</p></td>
+</tr>
+<tr class="row-even"><td><p>BOOT_SEL1#</p></td>
+<td><p>P124</p></td>
+<td></td>
+<td><p>CMOS</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Pulled up on module.</p></td>
+</tr>
+<tr class="row-odd"><td><p>BOOT_SEL2#</p></td>
+<td><p>P125</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>[STRIKEOUT:
+]Only booting from EMMc and SDcard is supported</p></td>
+</tr>
+<tr class="row-even"><td><p>[STRIKEOUT:FORCE_RECOV#]</p></td>
+<td><p>S155</p></td>
+<td></td>
+<td><p>[STRIKEOUT:I OD
+CMOS]</p></td>
+<td><p>[STRIKEOUT:1.8V]</p></td>
+<td><p>[STRIKEOUT:Standby]</p></td>
+<td><p>[STRIKEOUT:PU 10K
+ ]</p></td>
+<td><p>[STRIKEOUT:Driven by OD on Carrier.
+Pulled up on module.
+Low on this pin allows non-protected segments of Module boot device to be rewritten / restored from an external USB Host on Module USB0. The Module USB0 operates in Client Mode when in the Force Recovery function is invoked. Pulled high on the Module.
+For SOCs that do not implement a USB based Force Recovery functions, then a low on the Module FORCE_RECOV# pin may invoke the SOC native Force Recovery mode – such as over a Serial Port.
+For x86 systems this signal may be used to load BIOS defaults.
+Pulled up on Module. Driven by OD part on Carrier.]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="power-1">
+<span id="id1"></span><h3>Power<a class="headerlink" href="#power-1" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 2%" />
+<col style="width: 50%" />
+<col style="width: 23%" />
+<col style="width: 17%" />
+<col style="width: 4%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Pin #</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>I/O Type</strong></p></th>
+<th class="head"><p><strong>Power Rail /
+Tolerance</strong></p></th>
+<th class="head"><p><strong>PU / PD</strong></p></th>
+<th class="head"><p><strong>Comments</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>VDD_IN</p></td>
+<td><p>P147, P148, P149, P150, P151, P152, P153, P154, P155, P156</p></td>
+<td><p>Module power input voltage
+4.75 min to 5.25V max</p></td>
+<td><p>P  Not defined within Signal Terminolgy Descriptions. Should we define a specific rail?</p></td>
+<td><p>4.75V to 5.25V / 5V</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GND</p></td>
+<td><p>P2, P9, P12, P15, P18, P32, P38, P47, P50, P53, P59, P68, P79, P82, P85, P88, P91, P94, P97, P100, P103, P120, P133, P142, S3, S10, S16, S25, S34, S47, S61, S64, S67, S70, S73, S80, S83, S86, S89, S92, S101, S110, S119, S124, S130, S136, S143, S158</p></td>
+<td><p>Module signal and power return, and GND reference</p></td>
+<td><p>P  Not defined within Signal Terminolgy Descriptions. Should we define a specific rail?</p></td>
+<td><p>Ground</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>VDD_RTC</p></td>
+<td><p>S147</p></td>
+<td><p>Low current RTC circuit backup power – 3.0V nominal. May be sourced from a Carrier based Lithium cell or Super Cap.</p></td>
+<td><p>P  Not defined within Signal Terminolgy Descriptions. Should we define a specific rail?</p></td>
+<td><p>[2 to 3.25] / 3.25V</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="software-support">
+<h1>Software Support<a class="headerlink" href="#software-support" title="Permalink to this headline">¶</a></h1>
+<p>Initial engineering versions of this product will only support Buildroot
+Linux. Buildroot source code and DTS source code are available through
+our standard FAE support channel.</p>
+<p><a class="reference external" href="http://askanexpert.adlinktech.com/">http://askanexpert.adlinktech.com</a></p>
+<p>Most simple way to get a console on the LEC-PX30 is through the USB
+Client port</p>
+<img alt="../_images/instruction.png" src="../_images/instruction.png" />
+<p>Once released support for Yocto is available on our Github site</p>
+<img alt="../_images/githib.png" src="../_images/githib.png" />
+<p>Build instruction from source, will be released at production time</p>
+</div>
+<div class="section" id="mechanical">
+<h1>Mechanical<a class="headerlink" href="#mechanical" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="thermal-solutions">
+<h1>Thermal Solutions<a class="headerlink" href="#thermal-solutions" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../getting-started/index.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="LEC-PX30 SMARC Module with Rockchip PX-30" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ADLINK Technology Inc.
+      <span class="lastupdated">
+        Last updated on Jul 10, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
