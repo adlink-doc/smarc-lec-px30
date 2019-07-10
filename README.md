@@ -1,1 +1,0 @@
-# smarc-lec-px30
